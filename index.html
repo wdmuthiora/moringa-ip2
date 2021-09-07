@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Akan Name Generator</title>
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Dennis Muthiora">
-    <meta name="description" content="Akan Name Generator">
-    <meta charset="UTF-8">
-  </head>
 
-  <body>
-    <form>
-      <p>Please fill in your details below.</p>
-       <!-- <label for="month">Select Birthday:</label>
+<head>
+  <title>Akan Name Generator</title>
+  <link href="/css/styles.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dennis Muthiora">
+  <meta name="description" content="Akan Name Generator">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <form>
+    <p>Please fill in your details below.</p>
+    <!-- <label for="month">Select Birthday:</label>
        <br><br>
        <input type="date" id="date" name="date" value="date"> -->
-      <label for="dayOfMonth">Day of the month:</label>
-      <br>
-      <input type="text" id="dayOfMonth" name="dayOfMonth"> 
-      <br>
-      <label for="month">Month:</label>
-      <br>
-      <input type="text" id="month" name="month">
-      <br>
-      <label for="year">Year:</label>
-      <br>
-      <input type="text" id="year" name="year">
-      <br>
+    <label for="dayOfMonth">Day of the month:</label>
+    <br>
+    <input type="number" id="dayOfMonth" placeholder="Select month of the year" name="dayOfMonth" required>
+    <br>
+    <label for="month">Month:</label>
+    <br>
+    <input type="number" id="month" placeholder="Select a day of the month" name="month" required>
+    <br>
+    <label for="year">Year:</label>
+    <br>
+    <input type="text" id="year" placeholder="Select year" name="year" required>
+    <br>
 
-      <p>Please select your gender: </p>
-      <input type="radio" id="male" name="male" value="male">
+    <p>Please select your gender: </p>
+
+    <select id="gender">
+      <option value="Female">Female</option>
+      <option value="Male">Male</option>
+    </select>
+    <br>
+
+
+    <!-- <input type="radio" id="male" name="male" value="male" required>
       <label for="html">Male</label><br>
-      <input type="radio" id="female name="female" value="female">
+      <input type="radio" id="female name="female" value="female" required>
       <label for="female">Female</label><br>
+       -->
+    <br>
+    <input type="submit" onclick="akanName(); return false">
 
-      <br>
-      <input type="submit" onclick="alert('Your submission was successful.')" >
-      <input type="reset" onclick="alert('All fields have been reset. Try again')">
+    <input type="reset" onclick="alert('All fields have been reset. Try again')">
 
-    </form>
-    <script src="js/script.js"></script>
+  </form>
 
-  </body>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
