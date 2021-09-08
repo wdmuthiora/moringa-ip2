@@ -10,8 +10,9 @@
   <meta charset="UTF-8">
 </head>
 
-<body>
-  <form>
+<body class="body">
+  <div class="form-div">
+  <form class="form">
     <p>Please fill in your details below.</p>
     <!-- <label for="month">Select Birthday:</label>
        <br><br>
@@ -37,23 +38,17 @@
     </select>
     <br>
 
-
-    <!-- <input type="radio" id="male" name="male" value="male" required>
-      <label for="html">Male</label><br>
-      <input type="radio" id="female name="female" value="female" required>
-      <label for="female">Female</label><br>
-       -->
     <br>
-    <input id="submit" type="submit" onclick="akanName(); return false">
+    <input class="submit" id="submit" type="submit" onclick="akanName(); return false">
+    <br>
+    <input Class="reset" id="reset" type="reset" onclick="alert('All fields have been reset. Try again')">
 
-    <input id="reset" type="reset" onclick="alert('All fields have been reset. Try again')">
-
-    <!-- <p id="result">Results: </p> -->
-
+    <!-- 		<p id="result">Results: </p>		 -->
 
   </form>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
 
-</html
+</html>
