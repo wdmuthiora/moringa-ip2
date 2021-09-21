@@ -18,7 +18,6 @@ function akanName() {
 
   //formula to determine day of the week
   var day = Math.ceil((((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + dayOfMonth) % 7)
-
   var dayBorn = daysOfTheWeek[day - 1];
   var femaleAkanName = femaleNames[day - 1];
   var maleAkanName = maleNames[day - 1];
