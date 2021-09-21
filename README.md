@@ -1,4 +1,4 @@
-# moringa-ip3
+# Akan Name Generator
 
 ## Demo
 Here is a working live demo :  https://wdmuthiora.github.io/moringa-ip2/
